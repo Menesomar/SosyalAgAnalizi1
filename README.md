@@ -30,12 +30,12 @@ Bu bölümde projede kullanılan temel algoritmaların çalışma mantığı, ak
 ```mermaid
 flowchart TD
     A[Başla: Kaynak Düğüm Seç] --> B{Mesafe Tablosunu Sıfırla}
-    B --> C[Başlangıç Mesafesi = 0, Diğerleri = Sonsuz]
+    B --> C[Başlangıç Mesafesi 0 Diğerleri Sonsuz]
     C --> D[Öncelik Kuyruğuna Ekle]
     D --> E{Kuyruk Boş mu?}
     E -- Evet --> F[Bitiş: Yolu Döndür]
-    E -- Hayır --> G[En Küçük Mesafeli Düğümü (u) Çek]
-    G --> H[Komşuları (v) Gez]
+    E -- Hayır --> G["En Küçük Mesafeli Düğümü (u) Çek"]
+    G --> H["Komşuları (v) Gez"]
     H --> I{Alternatif Yol Daha mı Kısa?}
     I -- Evet --> J[Mesafeyi Güncelle ve Kuyruğa Ekle]
     I -- Hayır --> H
@@ -50,11 +50,11 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[Başla] --> B[Düğümleri Derecelerine Göre Azalan Sırada Diz]
-    B --> C[İlk Rengi Seç (k=1)]
+    B --> C["İlk Rengi Seç (k=1)"]
     C --> D[Listeden İlk Boyanmamış Düğümü Seç ve Boya]
     D --> E[Bu Düğüme Komşu Olmayan Diğer Düğümleri de Aynı Renge Boya]
     E --> F{Tüm Düğümler Boyandı mı?}
-    F -- Hayır --> G[Sonraki Renge Geç (k=k+1)]
+    F -- Hayır --> G["Sonraki Renge Geç (k=k+1)"]
     G --> D
     F -- Evet --> H[Bitiş: Renklendirme Tamam]
 ```
@@ -125,7 +125,7 @@ Projede gerçekleştirilen analiz ve görselleştirme adımlarına ait ekran gö
 
 **1. Popülerlik Analizi (Top 5)**
 "Analiz Et" butonu ile ağ üzerindeki düğüm dereceleri hesaplanarak, en popüler (merkezi) 5 kullanıcının tespit edildiği ve listelendiği ekran:
-![Popülerlik Analizi](assets/Analiizret.png)
+![Popülerlik Analizi](img/Analiizret.png)
 
 **2. Dijkstra En Kısa Yol Tespiti**
 Seçilen iki düğüm (Kişi) arasındaki en kısa ve optimum yolun görselleştirilmesi:
