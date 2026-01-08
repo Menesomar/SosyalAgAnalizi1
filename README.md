@@ -2,7 +2,7 @@
 
 ## 1. Proje Künyesi
 - **Proje Adı:** Sosyal Ağ Analizi ve Görselleştirme (Social Network Analysis Tool)
-- **Ders:** Yazılım Laboratuvarı 2
+- **Ders:** Yazılım Geliştirme Laboratuvarı
 - **Ekip Üyeleri:** Rıdvan Elen - Muhammed Enes Omar
 - **Tarih:** Ocak 2026
 - **Dönem:** 2025-2026 Güz Dönemi
